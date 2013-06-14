@@ -4,6 +4,25 @@
 	<link rel="stylesheet" type="text/css" href="template.css">
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
+	<script>
+	$(document).ready(function() {
+		$("a.navbar").click(function() {
+			var x = $(this).attr("id");
+			$("section.tab").slideUp(400, function() {
+				// Get the id of the link, parse it and then show that section
+				if (x==undefined) {
+					alert("The link's id is undefined");
+				}
+				else {
+					x=x.replace("_nav","_tab");
+					$("section#" + x).delay(400).slideDown("slow");
+			
+				}
+			});
+		});
+	});
+	</script>
+	
 	<title>Lawrence Bautista</title>
 </head>
 
@@ -13,14 +32,14 @@
 </header>
 
 <nav>	
-	<ul>
-		<li><a class="menu" href="index.php">Home</a></li>
-		<li><a class="menu" href="edm.php">EDM</a></li>
-		<li><a class="menu" href="classical.php">Classical</a></li>
-		<li><a class="menu" href="computers.php">Computers</a></li>
-		<li><a class="menu" href="about.php">About</a></li>
-		<li><a class="menu" href="contact.php">Contact</a></li>
-		<li><a class="menu" href="info.php">Site Info</a></li>
+	<ul class="navbar">
+		<li class="navbar"><a class="navbar" id="home_nav" href="#">Home</a></li>
+		<li class="navbar"><a class="navbar" id="edm_nav" href="#">EDM</a></li>
+		<li class="navbar"><a class="navbar" href="#">Classical</a></li>
+		<li class="navbar"><a class="navbar" href="#">Computers</a></li>
+		<li class="navbar"><a class="navbar" href="#">About</a></li>
+		<li class="navbar"><a class="navbar" href="#">Contact</a></li>
+		<li class="navbar"><a class="navbar" href="#">Site Info</a></li>
 	</ul>
 </nav>
 
@@ -36,14 +55,27 @@
 	</ul>
 </aside>
 
-<section>	
-	<h3>Finding the path ahead...</h3>
-	<p>It's a little late, but I think I'm ready to venture into the outside world. I hope that this is just an echo of what I'm going to accomplish in the future.</p>
+<section class="tab" id="home_tab">	
+	<h3>Get with the times...</h3>
+	<p>I don't believe people should live in the past. Neither should people live in the present. Everything we do should be preparation for the FUTURE.</p>
 	<h3>Bio</h3>
 	<p>I am a CS/Bio graduate of McGill University. I've taken a lot of courses such as Artificial Intelligence, Operating Systems, Algorithms and Data Structures, and Computer Networks. Having lived in Montreal and Mississauga, I want to someday live somewhere else in the world</p> 
 	<p>Playing piano is one of my favourite hobbies. I'm currently scheduled to do my ARCT in Piano Performance this coming August.</p>
 	<p>I also play guitar and produce my own EDM music. I will show my projects in the future</p>
 	<p>Enjoy this site, and <a href="mailto:lawrence1315@gmail.com?Subject=Update%20Your%20Site!">remind me</a> to update it!</p>
+
+
+
+<h1>News!</h1>
+<article>
+	<h3>2013-06-11 Used HTML5 layout features</h3>
+	<p>The new layout features for HTML5 remove the necessity of div and span elements. Instead these are replaced with the elements: header, footer, nav, aside, section, article. While typing this I just realized how annoying html &lt &gt signs are to type in HTML.</p> 
+</article>
+</section>
+
+<section class="tab" id="edm_tab">
+	<h3>EDM Section</h3>
+	<p>This is the EDM section. Original tracks by yours truly a.k.a. DJ Gak 2 (not actually a DJ). Visit my <a href="https://soundcloud.com/gak2">SoundCloud</a> to listen to my tracks!</p>
 </section>
 
 <footer>

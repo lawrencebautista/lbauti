@@ -1,9 +1,37 @@
 header {
 	clear:both;
+	position:relative;
 }
 
 nav {
-	float:left;
+	width:1280px;
+	outline:0px;
+	margin:0px;
+	border:0px;
+	padding:0px;
+	margin-left:150px;
+	margin-right:150px;
+	
+}
+a.navbar {
+	/*float:left; /*Apparently you gotta float both a and ul in horizontal nav bars*/
+	padding:0.5em 0.5em;
+	display:inline;
+	background-color:#303030;
+
+}
+
+a.navbar:hover {
+/*	-moz-transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	-o-transform: rotate(360deg);
+	transform: rotate(360deg); */
+	transition-duration:1s;
+}
+
+aside {
+	position:relative;
+	float:right;
 	text-align:center;
 	width:120px;
 	outline:0px;
@@ -12,47 +40,48 @@ nav {
 	padding:0px;
 	background-color:#303030;
 }
-a.menu {
-	display:block;
-	height: 20px;
-	width:120px;
 
-}
-
-a.menu:hover {
-	-moz-transform: rotate(360deg);
-	-webkit-transform: rotate(360deg);
-	-o-transform: rotate(360deg);
-	transform: rotate(360deg);
-	transition-duration:1s;
-}
-
-aside {float:right;}
 
 section {
+	width:1280px;
+	margin:0;
+	padding:0;
 	margin-left:150px;
 	margin-right:150px;
+	background-color:#603030;
 }
 
+section.tab {
+	display:none;
+}
+
+section#home_tab {
+	display:block;
+}
+
+footer {
+	position:relative;
+}
 footer p{
 	font-size:8pt;
 }
 
+body {background-color:blue; color:#FFFFFF;}
 
-
-
-
-body {background-color:#000000; color:#FFFFFF;}
-
-h3 {color:#009900;}
+h1,h2,h3 {color:#009900;}
 
 p {font-family:Verdana;font-size:11pt;color:#FFFFFF;}
 
-ul {padding:0px;	
-	margin:0px;
+ul.navbar {
+	/*float:left; /*Apparently you gotta float both ul and a to the left for horizontal nav bars */
+	padding:0;	
+	margin:0;
+	width:100%;
 	list-style-type:none;
 }
-li {
+
+li.navbar{
+	display:inline;
 }
 
 a {text-decoration:none;}
