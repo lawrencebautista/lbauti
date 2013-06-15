@@ -7,14 +7,15 @@ nav {
 	width:1280px;
 	outline:0px;
 	margin:0px;
-	border:0px;
-	padding:0px;
+	border-style:solid;
+	border-color:lightgray;
+	/*padding:0.5em 0;*/
 	margin-left:150px;
 	margin-right:150px;
 	
 }
 a.navbar {
-	/*float:left; /*Apparently you gotta float both a and ul in horizontal nav bars*/
+	float:left; /*Apparently you gotta float both a and ul in horizontal nav bars*/
 	padding:0.5em 0.5em;
 	display:inline;
 	background-color:#303030;
@@ -44,6 +45,8 @@ aside {
 
 section {
 	width:1280px;
+	border-style:solid;
+	border-color:white;
 	margin:0;
 	padding:0;
 	margin-left:150px;
@@ -73,7 +76,7 @@ h1,h2,h3 {color:#009900;}
 p {font-family:Verdana;font-size:11pt;color:#FFFFFF;}
 
 ul.navbar {
-	/*float:left; /*Apparently you gotta float both ul and a to the left for horizontal nav bars */
+	float:left; /*Apparently you gotta float both ul and a to the left for horizontal nav bars */
 	padding:0;	
 	margin:0;
 	width:100%;

@@ -41,6 +41,7 @@
 		<li class="navbar"><a class="navbar" href="#">Contact</a></li>
 		<li class="navbar"><a class="navbar" href="#">Site Info</a></li>
 	</ul>
+	<div style="clear: both;"></div>
 </nav>
 
 <aside>
@@ -56,13 +57,13 @@
 </aside>
 
 <section class="tab" id="home_tab">	
-	<h3>Get with the times...</h3>
-	<p>I don't believe people should live in the past. Neither should people live in the present. Everything we do should be preparation for the FUTURE.</p>
+	<h3>This is my site prototype...</h3>
+	<p>No unauthorized access. Seriously. This is far from complete.</p>
 	<h3>Bio</h3>
 	<p>I am a CS/Bio graduate of McGill University. I've taken a lot of courses such as Artificial Intelligence, Operating Systems, Algorithms and Data Structures, and Computer Networks. Having lived in Montreal and Mississauga, I want to someday live somewhere else in the world</p> 
 	<p>Playing piano is one of my favourite hobbies. I'm currently scheduled to do my ARCT in Piano Performance this coming August.</p>
 	<p>I also play guitar and produce my own EDM music. I will show my projects in the future</p>
-	<p>Enjoy this site, and <a href="mailto:lawrence1315@gmail.com?Subject=Update%20Your%20Site!">remind me</a> to update it!</p>
+	<p>If this site hasn't been updated for a while, <a href="mailto:lawrence1315@gmail.com?Subject=Update%20Your%20Site!">remind me</a> to update it!</p>
 
 
 
