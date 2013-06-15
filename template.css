@@ -1,6 +1,21 @@
+body {
+	margin:0;
+	padding:0;
+}
+
+a {text-decoration:none;}
+/*a:link {color:blue;}
+a:visited{color:blue;}
+a:hover{color:#FFFFFF;}
+a:active{color:#888888;}
+*/
+
 header {
+	background-color:#000000;
+	border-style:solid;
 	clear:both;
 	position:relative;
+	margin:0;
 }
 
 nav {
@@ -8,7 +23,8 @@ nav {
 	outline:0px;
 	margin:0px;
 	border-style:solid;
-	border-color:lightgray;
+	border-color:black;
+	background-color:gray;
 	/*padding:0.5em 0;*/
 	margin-left:150px;
 	margin-right:150px;
@@ -18,22 +34,25 @@ a.navbar {
 	float:left; /*Apparently you gotta float both a and ul in horizontal nav bars*/
 	padding:0.5em 0.5em;
 	display:inline;
-	background-color:#303030;
-
+	background-color:gray;
 }
+a.navbar:link {color:lightgray;}
+a.navbar:visited{color:lightgray;}
+a.navbar:active{color:lightblue;}
+
 
 a.navbar:hover {
-/*	-moz-transform: rotate(360deg);
+	color:lightblue;
+	-moz-transform: rotate(360deg);
 	-webkit-transform: rotate(360deg);
 	-o-transform: rotate(360deg);
-	transform: rotate(360deg); */
+	transform: rotate(360deg); 
 	transition-duration:1s;
 }
 
 aside {
 	position:relative;
 	float:right;
-	text-align:center;
 	width:120px;
 	outline:0px;
 	margin:0px;
@@ -46,12 +65,12 @@ aside {
 section {
 	width:1280px;
 	border-style:solid;
-	border-color:white;
+	border-color:black;
 	margin:0;
 	padding:0;
 	margin-left:150px;
 	margin-right:150px;
-	background-color:#603030;
+	background-color:lightgray;
 }
 
 section.tab {
@@ -69,11 +88,20 @@ footer p{
 	font-size:8pt;
 }
 
-body {background-color:blue; color:#FFFFFF;}
 
-h1,h2,h3 {color:#009900;}
+h1,h2,h3 {color:#000000;}
+h1#banner {color:#FFFFFF;}
 
-p {font-family:Verdana;font-size:11pt;color:#FFFFFF;}
+p {font-family:Verdana;font-size:11pt;color:#000000;}
+
+ul {
+	list-style-type:none;
+}
+
+ul.links {
+padding:0;
+margin:0;
+}
 
 ul.navbar {
 	float:left; /*Apparently you gotta float both ul and a to the left for horizontal nav bars */
@@ -87,8 +115,3 @@ li.navbar{
 	display:inline;
 }
 
-a {text-decoration:none;}
-a:link {color:#009900;}
-a:visited{color:#009900;}
-a:hover{color:#FFFFFF;}
-a:active{color:#888888;}
