@@ -11,15 +11,34 @@ a:active{color:#888888;}
 */
 
 header {
+	position:absolute;
+	min-width:900px;
+	max-width:1580px;
 	background-color:#000000;
 	border-style:solid;
+	border-width:1px;
 	clear:both;
 	position:relative;
-	margin:0;
+	margin-left:auto;
+	margin-right:auto;
+	padding-left;
+}
+
+#bodycontainer {
+	position:relative;
+	min-width:900px;
+	max-width:1580px;
+	border-style:solid;
+	border-width:1px; /*So that you can see the background color over the whole container*/
+	margin-left:auto;
+	margin-right:auto;
+    padding;0;
+	clear-both;
 }
 
 nav {
-	width:1280px;
+	max-width:1280px;
+	min-width:600px;
 	outline:0px;
 	margin:0px;
 	border-style:solid;
@@ -28,6 +47,7 @@ nav {
 	/*padding:0.5em 0;*/
 	margin-left:150px;
 	margin-right:150px;
+	overflow:hidden;
 	
 }
 a.navbar {
@@ -52,25 +72,34 @@ a.navbar:hover {
 
 aside {
 	position:relative;
+	width:150px;
 	float:right;
-	width:120px;
 	outline:0px;
 	margin:0px;
 	border:0px;
 	padding:0px;
-	background-color:#303030;
+	background-color:lightblue;
 }
 
 
 section {
-	width:1280px;
+	max-width:1280px;
+	min-width:600px;
 	border-style:solid;
 	border-color:black;
+	border-width:1px;
 	margin:0;
 	padding:0;
 	margin-left:150px;
 	margin-right:150px;
 	background-color:lightgray;
+}
+
+#mainsection {
+	border-style:solid;
+	border-color:black;
+	border-width:2px;
+	border-radius:5px;
 }
 
 section.tab {
@@ -83,6 +112,8 @@ section#home_tab {
 
 footer {
 	position:relative;
+	margin-left:150px;
+	margin-right:150px;
 }
 footer p{
 	font-size:8pt;
@@ -115,3 +146,7 @@ li.navbar{
 	display:inline;
 }
 
+.blogtext {
+	margin-bottom:0;
+	padding-bottom:0;
+}

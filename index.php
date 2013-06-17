@@ -18,6 +18,7 @@
 					
 					if (x==undefined) {
 						alert("The link's id is undefined");
+						isSliding = false;
 					}
 					else {
 						var y=x.replace("_nav","_tab");
@@ -40,19 +41,7 @@
 	<a href="index.php" id="homelink"><h1 id="banner">Lawrence Bautista</h1></a>
 </header>
 
-<nav>	
-	<ul class="navbar">
-		<li class="navbar"><a class="navbar" id="home_nav" href="#">Home</a></li>
-		<li class="navbar"><a class="navbar" id="edm_nav" href="#">EDM</a></li>
-		<li class="navbar"><a class="navbar" id="classical_nav" href="#">Classical</a></li>
-		<li class="navbar"><a class="navbar" href="#">Computers</a></li>
-		<li class="navbar"><a class="navbar" href="#">About</a></li>
-		<li class="navbar"><a class="navbar" href="#">Contact</a></li>
-		<li class="navbar"><a class="navbar" href="#">Site Info</a></li>
-	</ul>
-	<div style="clear: both;"></div>
-</nav>
-
+<div id="bodycontainer">
 <aside>
 	<p>Obligatory Social Media Links</p>
 	<ul class="links">
@@ -64,6 +53,21 @@
 		<li>Myspace</li>
 	</ul>
 </aside>
+
+<div id="mainsection">
+<nav>	
+	<ul class="navbar">
+		<li class="navbar"><a class="navbar" id="home_nav" href="#">Home</a></li>
+		<li class="navbar"><a class="navbar" id="edm_nav" href="#">EDM</a></li>
+		<li class="navbar"><a class="navbar" id="classical_nav" href="#">Classical</a></li>
+		<li class="navbar"><a class="navbar" href="#">Computers</a></li>
+		<li class="navbar"><a class="navbar" href="#">About</a></li>
+		<li class="navbar"><a class="navbar" href="#">Contact</a></li>
+		<li class="navbar"><a class="navbar" href="#">Site Info</a></li>
+	</ul>
+	<!--<div style="clear: both;"></div>-->
+</nav>
+
 
 <section class="tab" id="home_tab">	
 	<h2>This is my site prototype...</h2>
@@ -77,10 +81,27 @@
 
 
 <h2>News!</h2>
-<article>
-	<h3>2013-06-11 Used HTML5 layout features</h3>
-	<p>The new layout features for HTML5 remove the necessity of div and span elements. Instead these are replaced with the elements: header, footer, nav, aside, section, article. While typing this I just realized how annoying html &lt &gt signs are to type in HTML.</p> 
-</article>
+<?php
+$db = new SQLite3('sqlite3/blog.db');
+
+$result = $db->query('SELECT * from Entries');
+
+while ($row = $result->fetchArray(SQLITE3_ASSOC)) {
+    //var_dump($row);
+    $id = $row['Id'];
+    $author = $row['Author'];
+    $date = $row['Date'];
+    $title = $row['Title'];
+    $content = $row['Content'];
+echo
+"<article id=\"blog" . $id . "\">
+	<h3 class=\"blogtext\">" . $title . "</h3>
+	<small>Posted by " . $author . " on " . $date . "</small>
+	<p class=\"blogtext\">" . $content . "</p>
+</article>";
+}
+?>
+
 </section>
 
 <section class="tab" id="edm_tab">
@@ -95,6 +116,8 @@
 	<h3>Franz Liszt: Hungarian Rhapsody No. 2</h3>
 	<iframe width="560" height="315" src="http://www.youtube.com/embed/5hha3veKirA" frameborder="0" allowfullscreen></iframe>
 </section>
+</div>
+</div>
 
 <footer>
 	<p>Website programmed by Lawrence Bautista. &copy;2013. All rights reserved.</p>
