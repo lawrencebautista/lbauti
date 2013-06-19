@@ -17,7 +17,7 @@
 					// Get the id of the link, parse it and then show that section
 					
 					if (x==undefined) {
-						alert("The link's id is undefined");
+						alert("Sorry, this section is not available yet!");
 						isSliding = false;
 					}
 					else {
@@ -70,10 +70,10 @@
 
 
 <section class="tab" id="home_tab">	
-	<h2>This is my site prototype...</h2>
-	<p>No unauthorized access. Seriously. This is far from complete.</p>
-	<h3>Bio</h3>
-	<p>I am a CS/Bio graduate of McGill University. I've taken a lot of courses such as Artificial Intelligence, Operating Systems, Algorithms and Data Structures, and Computer Networks. Having lived in Montreal and Mississauga, I want to someday live somewhere else in the world</p> 
+	<h2>Website Prototype</h2>
+	<p>This is currently an experimental site which may or not be fully utilized in the future.</p>
+	<h3>Biography</h3>
+	<p>I am a CS/Bio graduate of McGill University. I've taken a lot of courses such as Artificial Intelligence, Operating Systems, Algorithms and Data Structures, and Computer Networks.</p> 
 	<p>Playing piano is one of my favourite hobbies. I'm currently scheduled to do my ARCT in Piano Performance this coming August.</p>
 	<p>I also play guitar and produce my own EDM music. I will show my projects in the future</p>
 	<p>If this site hasn't been updated for a while, <a href="mailto:lawrence1315@gmail.com?Subject=Update%20Your%20Site!">remind me</a> to update it!</p>
@@ -120,7 +120,7 @@ echo
 </div>
 
 <footer>
-	<p>Website programmed by Lawrence Bautista. &copy;2013. All rights reserved.</p>
+	<p>Website programmed by Lawrence Bautista. &copy;2013 All rights reserved.</p>
 	<p>This is coded in HTML5 and CSS3. Please upgrade to the latest version of your browser if you haven't already</p>
 </footer>
 
