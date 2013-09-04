@@ -1,4 +1,4 @@
 lbauti
 ======
 
-Repository for my personal website
+Repository for my old personal website
